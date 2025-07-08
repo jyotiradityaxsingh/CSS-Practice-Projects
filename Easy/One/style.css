@@ -1,0 +1,99 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #141414;
+  --card-bg-color: #1e1e1e;
+  --primary-color: #c4f82a;
+  --secondary-color: #333333;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #ccc;
+}
+@font-face {
+  font-family: "Inter-Variable";
+  src: url("Assets/Fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+/* Apply global styles */
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  color: var(--primary-font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+/* Name */
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Location */
+.card .location {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  margin-bottom: 1.7rem;
+}
+
+/* Bio */
+.card .bio {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-font-color);
+}
+
+/* Social Links */
+.social-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.social-links a {
+  display: block;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  padding: 0.75rem;
+  border-radius: 8px;
+  color: var(--primary-font-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Hover Effect */
+.social-links a:hover {
+  opacity: 0.85;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #000;
+}
