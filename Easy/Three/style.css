@@ -1,0 +1,115 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f3eae3;
+  --primary-color: #3d8168;
+  --text-grey: #6c7289;
+  --font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.product-card {
+  display: flex;
+  background-color: #ffffff;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+}
+
+.image-product {
+  width: 50%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.product-category {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  letter-spacing: 0.2rem;
+  font-size: 0.85rem;
+  margin-bottom: -0.5rem;
+}
+
+.product-title {
+  color: #1c232b;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  margin-bottom: -0.2rem;
+  font-family: serif;
+}
+
+.product-description {
+  color: var(--text-grey);
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  margin-bottom: -1.2rem;
+}
+
+.product-pricing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: -0.4rem;
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: serif;
+  letter-spacing: -0rem;
+}
+
+.product-original-price {
+  color: var(--text-grey);
+  text-decoration: line-through;
+  font-size: 0.7rem;
+}
+
+.add-to-cart-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1a4031;
+}
