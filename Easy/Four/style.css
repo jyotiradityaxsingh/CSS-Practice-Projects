@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsl(185, 75%, 39%);
+  --bg-card: #ffffff;
+  --font-color: hsl(229, 23%, 23%);
+  --special-font: hsl(227, 19%, 46%);
+  --ruler: hsla(227, 19%, 46%, 0.2);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* To center the profile card horizontally and vertically */
+  min-height: 100vh; /* Fixes the issue of using 100vh as min-width */
+  background-image: url(Assets/Images/Bg-Pattern-Top.svg),
+    url(Assets/Images/Bg-Pattern-Bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 52vw bottom 35vh, left 52vw top 50vh;
+}
+
+.profile-card {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-card__wrapper {
+  max-width: 420px;
+  background-color: var(--bg-card);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.profile-card__background-pattern {
+  width: 420px;
+}
+
+.profile-card__picture {
+  width: 100px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin-top: -52px;
+  margin-bottom: 20px;
+}
+
+.profile-card__name {
+  color: var(--font-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profile-card__name .profile-card__age {
+  color: var(--special-font);
+  font-weight: 400;
+}
+
+.profile-card__location {
+  color: var(--special-font);
+  font-size: 13px;
+}
+
+.profile-card__stats {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--ruler);
+  padding: 30px;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.profile-card__stat-number {
+  font-size: 18px;
+  color: var(--font-color);
+  font-weight: 700;
+}
+
+.profile-card__stat-label {
+  color: var(--special-font);
+  font-weight: 400;
+}
